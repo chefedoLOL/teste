@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de aprendizagem</title>
+    <style>
+        body {background-color: rgb(139, 139, 80);}
+        
+        p1{font: 60pt arial;
+            color: brown;}
+
+        p2{font: 20pt arial;
+            color:aliceblue;}
+
+        p3{font: 15pt arial;
+            color:green;}
+
+            p4{font: 40pt arial;
+            color: green;}
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        var sist = window.prompt('Qual sistema aprendi hoje?')
+        var notadif =Number(window.prompt(`Qual nota para o nivel de dificuldade ${sist}?`))
+        var notatemp = Number(window.prompt(`Qual nota para o tempo para aprender o ${sist}?`))
+        var s = notadif + notatemp
+        var valor =Number (window.prompt('Qual seu salário do mês?'))
+
+        document.write(`<p1> Olá <strong>${nome}</strong>.</p1> <br/>`)
+        document.write(`<p2> Hoje você aprendeu uma parte do ${sist}.</p2> <br/>`)
+        document.write(`E a soma das suas notas deram <p3>${s}</p3>.<br/>`)
+        document.write(`<p4>Seu salário do mês foi ${valor.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}</p4>`)
+</script>
+    
+</body>
+</html>
